@@ -1,7 +1,3 @@
-[![CI](https://github.com/Lonor/websocket-cluster/actions/workflows/sonar.yml/badge.svg)](https://github.com/Lonor/websocket-cluster/actions/workflows/sonar.yml)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Lonor_websocket-cluster&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=Lonor_websocket-cluster)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Lonor_websocket-cluster&metric=alert_status)](https://sonarcloud.io/dashboard?id=Lonor_websocket-cluster)
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=Lonor_websocket-cluster&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=Lonor_websocket-cluster)
 
 # 实战 Spring Cloud 的 WebSocket 集群
 
@@ -40,6 +36,7 @@ docker build -t websocket:1.0.0 websocket/.
 docker build -t gateway:1.0.0 gateway/.
 docker-compose up -d
 docker ps
+
 ```
 
 可以用 `docker-compose scale websocket-server=3` 命令来创建新的 Websocket 实例。实际上我给这个项目写了一个前端来展示。

@@ -10,18 +10,18 @@ spring:
     name:
       gateway-server
   redis:
-    host: 'docker.for.mac.host.internal'
+    host: host.docker.internal
     port: 6379
   rabbitmq:
-    host: 'docker.for.mac.host.internal'
+    host: host.docker.internal
     port: 5672
-    username: admin
-    password: admin
+    username: guest
+    password: guest
   cloud:
     nacos:
       discovery:
-        server-addr: docker.for.mac.host.internal:8848
-        namespace: 6e78ac6b-71bb-4611-994a-9b48140bf1ef
+        server-addr: 39.104.224.205:8848
+        namespace: yh
     gateway:
       discovery:
         locator:
@@ -40,6 +40,6 @@ websocket:
     name: 'websocket-server'
   docker:
     network: 'compose-network'
-    host: 'tcp://docker.for.mac.host.internal:6666'
+    host: 'tcp://host.docker.internal:2375'
     image:
       name: 'websocket:1.0.0'

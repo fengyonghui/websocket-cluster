@@ -9,7 +9,7 @@ services:
       - "7000:7000"
   websocket-server:
     image: websocket:1.0.0
-    hostname: websocket-serverr
+    hostname: websocket-server
     networks:
       - network
 networks:
